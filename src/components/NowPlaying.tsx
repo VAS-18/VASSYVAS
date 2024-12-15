@@ -23,9 +23,9 @@ interface LastFMResponse {
 }
 
 const NowPlaying = () => {
-  const [song, setSong] = useState(null);
+  const [song, setSong] = useState <Track | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchNowPlaying = async () => {
