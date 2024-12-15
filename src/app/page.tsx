@@ -1,5 +1,4 @@
-import Footer from "@/components/Footer";
-import NowPlaying from "@/components/NowPlaying";
+
 import TerminalText from "@/components/TerminalText";
 
 export default function Home() {
