@@ -76,7 +76,7 @@ const NowPlaying = () => {
   return (
     <div className="p-3 rounded-lg bg-opacity-10 backdrop-blur-sm">
       {song ? (
-        <div className="flex items-center space-x-4">
+        <div className=" no-scrollbar font-doto font-bold flex items-center space-x-4">
           <img 
             src={song.image[1]['#text'] || '/default-album.png'} 
             alt={song.name}
