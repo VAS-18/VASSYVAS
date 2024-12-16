@@ -1,7 +1,10 @@
+"use client";
 import Link from 'next/link';
-import { LuRocket, LuLayoutDashboard, LuUser, LuMail, LuChevronsRight } from "react-icons/lu";
+import { LuRocket, LuLayoutDashboard, LuUser, LuMail, LuChevronsRight, LuMenu } from "react-icons/lu";
+import { useState } from 'react';
 
 const SideNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const menuList = [
     {
       id: 1,
@@ -26,12 +29,10 @@ const SideNav = () => {
   ];
 
   return (
-    <nav className="h-full w-16 flex items-center justify-center relative pl-10 bg-background/80 backdrop-blur-sm">
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 text-foreground/50 text-2xl transform translate-x-6 group-hover:opacity-0 transition-all duration-300">
+    <nav className="h-full w-full flex items-center justify-center relative pl-10 bg-background/80 backdrop-blur-sm">
+      <div className="absolute right-0 text-foreground/50 text-2xl transform translate-x-2 group-hover:opacity-0 transition-all duration-300">
         <LuChevronsRight className="animate-pulse" />
       </div>
-
-      <div className="absolute h-[70%] w-[2px] bg-foreground/20 rounded-full -left-3 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150"></div>
       
       <div className="flex flex-col gap-16 relative z-10">
         {menuList.map((menu) => (

@@ -21,14 +21,12 @@ const TerminalText = () => {
   }, []);
 
   return (
-    <div className="text-4xl text-left w-full max-w-10xl tracking-wider overflow-hidden">
-  
-      <pre className="font-doto font-bold whitespace-pre overflow-x-hidden">
-        {displayText}
-        <span className="inline-block w-2 h-5 bg-current ml-1 animate-blink"></span>
-      </pre>
+    <div className="text-left w-full mx-auto px-2 sm:px-6 lg:px-8 tracking-wide ">
+    <div className="font-doto font-bold whitespace-pre overflow-x-hidden text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed md:leading-loose text-wrap md:w-full ">
+      {displayText}
     </div>
-  );
+  </div>
+  )
 };
 
 export default TerminalText;
