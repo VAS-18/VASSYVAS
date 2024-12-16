@@ -1,10 +1,9 @@
 "use client";
 import Link from 'next/link';
-import { LuRocket, LuLayoutDashboard, LuUser, LuMail, LuChevronsRight, LuMenu } from "react-icons/lu";
-import { useState } from 'react';
+import { LuRocket, LuLayoutDashboard, LuUser, LuMail, LuChevronsRight } from "react-icons/lu";
+
 
 const SideNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const menuList = [
     {
       id: 1,

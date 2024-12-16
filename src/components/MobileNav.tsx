@@ -1,7 +1,6 @@
 "use client";
 import Link from 'next/link';
-import { LuRocket, LuLayoutDashboard, LuUser, LuMail, LuChevronsRight, LuMenu } from "react-icons/lu";
-import { useState } from 'react';
+import { LuRocket, LuLayoutDashboard, LuUser, LuMail} from "react-icons/lu";
 
 const MobileNav = () => {
   const menuList = [
